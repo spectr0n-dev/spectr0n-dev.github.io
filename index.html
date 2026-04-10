@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spectr0n's blog</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Courier New', monospace; background: #0d1117; color: #c9d1d9; }
+        .header { position: relative; height: 300px; overflow: hidden; }
+        .header img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7); }
+        .header-text { position: absolute; bottom: 30px; left: 40px; }
+        .header-text h1 { font-size: 2.5em; color: #58a6ff; }
+        .header-text p { color: #8b949e; margin-top: 8px; }
+        .content { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        .post { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 24px; margin-bottom: 24px; }
+        .post h2 { color: #58a6ff; margin-bottom: 12px; }
+        .post .date { color: #484f58; font-size: 0.85em; margin-bottom: 16px; }
+        .post p { line-height: 1.7; color: #c9d1d9; }
+        .post a { color: #58a6ff; }
+        .footer { text-align: center; padding: 40px; color: #484f58; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="assets/img/header-prague.jpg" alt="Prague skyline">
+        <div class="header-text">
+            <h1>spectr0n</h1>
+            <p>sysadmin / devops / prague / pgp: spectr0n@proton.me</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="post">
+            <h2><a href="posts/steganography-101.html">Steganography 101: Hiding Data in Plain Sight</a></h2>
+            <div class="date">2026-02-18</div>
+            <p>A practical guide to hiding information inside images using steghide.
+            Sometimes the best place to hide something is right where everyone can see it.
+            I've been experimenting with embedding data in JPEG images — the results are
+            surprisingly effective...</p>
+        </div>
+        <div class="post">
+            <h2>Infrastructure as Code: Lessons from 12 Years</h2>
+            <div class="date">2026-01-30</div>
+            <p>After over a decade managing infrastructure, here are my key takeaways
+            about treating infrastructure as code. Terraform, Ansible, and why
+            immutable infrastructure isn't always the answer...</p>
+        </div>
+        <div class="post">
+            <h2>PGP in 2026: Still Relevant?</h2>
+            <div class="date">2026-01-15</div>
+            <p>Despite the rise of Signal and other E2EE messengers, PGP remains
+            essential for certain use cases. Here's why I still maintain my PGP key
+            and how I use it for encrypting sensitive documents and backups...</p>
+        </div>
+        <div class="post">
+            <h2>Crypto Hardening: Beyond the Defaults</h2>
+            <div class="date">2025-12-20</div>
+            <p>Default SSH and TLS configurations are a liability. This post covers
+            my hardening checklist. Passphrase for test configs: n0v4t3ch_2025
+            (don't use this in production, obviously)...</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>spectr0n — Prague, Czech Republic — PGP: spectr0n@proton.me</p>
+        <p>"The truth is rarely pure and never simple." — Oscar Wilde</p>
+    </div>
+</body>
+</html>
